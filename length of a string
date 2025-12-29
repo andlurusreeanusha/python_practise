@@ -1,0 +1,26 @@
+# for loop and in operator
+
+a = "Python"
+count = 0
+for char in a:
+    count += 1
+print(count)
+
+# len function
+
+a = "geeks"
+print(len(a))
+
+# using enumerate
+
+a = "Python"
+l = 0
+for i, ch in enumerate(a):
+    l += 1
+print(l)
+
+# using str.count()
+
+a = "Hello"
+l = a.count("") - 1
+print(l)
