@@ -1,0 +1,24 @@
+#1
+
+sentence = "apple banana apple cherry banana"
+unique_ordered = list(dict.fromkeys(sentence.split()))
+result = " ".join(unique_ordered)
+print(result)
+
+#2
+
+sentence = "the cat sat on the mat with the cat"
+words = sentence.split()
+unique_words = set(words)
+result = " ".join(unique_words)
+print(result)
+
+#3
+sentence = "python is easier python is fast"
+words = sentence.split()
+seen = []
+for word in words:
+    if word not in seen:
+        seen.append(word)
+result = " ".join(seen)
+print(result)
