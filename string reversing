@@ -1,0 +1,20 @@
+# slice method
+
+text = "Python"
+reversed_text = text[::-1]
+print(f"Original: {text}")
+print(f"Reversed: {reversed_text}")
+
+# reversed() and join() method
+
+text = "Data Science"
+reversed_text = "".join(reversed(text))
+print(reversed_text)
+
+# loop method
+text = "Hello"
+reversed_text = ""
+
+for char in text:
+    reversed_text = char + reversed_text
+print(reversed_text)
