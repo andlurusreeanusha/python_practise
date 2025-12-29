@@ -1,0 +1,21 @@
+# built-in method
+
+numbers = [15, 42, 7, 89, 23, 56]
+highest = max(numbers)
+print(f"The highest number is: {highest}") 
+
+# logical method
+
+numbers = [15, 42, 7, 89, 23, 56]
+highest = numbers[0]
+for n in numbers:
+    if n > highest:
+        highest = n
+print(f"The highest number found via loop is: {highest}")
+
+# Using sort
+
+numbers = [15, 42, 7, 89, 23, 56]
+numbers.sort(reverse=True)
+top_three = numbers[:3]
+print(f"The top 3 numbers are: {top_three}")
