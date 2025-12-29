@@ -1,0 +1,35 @@
+# slicing method
+
+def is_palindrome(s):
+    s = s.replace(" ", "").lower()
+    return s == s[::-1]
+word = "racecar"
+if is_palindrome(word):
+    print(f"'{word}' is a Palindrome!")
+else:
+    print(f"'{word}' is not a Palindrome.")
+
+# loop method
+
+def check_palindrome(s):
+    s = s.lower().replace(" ", "")
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+print(check_palindrome("level")) 
+print(check_palindrome("hello")) 
+
+# recursion method
+
+def is_palindrome_recursive(s):
+    s = s.lower().replace(" ", "")
+    if len(s) <= 1:
+        return True
+    if s[0] == s[-1]:
+        return is_palindrome_recursive(s[1:-1])
+    return False
